@@ -8,7 +8,8 @@ contract(
     });
   },
   describe("greet()", () => {
-    it("returns Good Evening", async () => {
+//     it("returns Good Evening", async () => {
+      it("Good Evening", async () => {
       const greeter = await GreeterContract.deployed();
       const expected = "Good Evening";
       const actual = await greeter.greet();
