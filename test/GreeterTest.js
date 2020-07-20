@@ -6,17 +6,18 @@ contract(
       const greeter = await GreeterContract.deployed();
       assert(greeter, "contract wasn't deployed");
     });
-  },
-  describe("greet()", () => {
-//     it("returns Good Evening", async () => {
-      it("Good Evening", async () => {
-      const greeter = await GreeterContract.deployed();
-      const expected = "Good Evening";
-      const actual = await greeter.greet();
-      assert.equal(actual, expected, "Greeting Should be 'Good Evening'");
-    });
-  })
-);
+  });
+//   },
+//   describe("greet()", () => {
+// //     it("returns Good Evening", async () => {
+//       it("Good Evening", async () => {
+//       const greeter = await GreeterContract.deployed();
+//       const expected = "Good Evening";
+//       const actual = await greeter.greet();
+//       assert.equal(actual, expected, "Greeting Should be 'Good Evening'");
+//     });
+//   })
+// );
 
 // function testUserGreeter() {
 //   let returnGreet = GreeterContract.greet("Good evening");
