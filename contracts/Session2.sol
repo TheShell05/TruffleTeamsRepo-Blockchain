@@ -65,7 +65,6 @@ contract Greeter {
     {
         return (profile.fName, profile.lName, profile.city);
     }
-
     function payGreeter(uint256 NameID) public payable returns (uint256) {
         return NameID;
     }
